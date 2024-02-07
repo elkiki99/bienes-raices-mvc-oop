@@ -51,7 +51,7 @@ class PropiedadController {
             // Validar
             $errores = $propiedad->validar();
     
-            if (empty($errores)) {
+            if(empty($errores)) {
                 // Crear carpeta
                 if(!is_dir(CARPETA_IMAGENES_PROPIEDADES)) {
                     mkdir(CARPETA_IMAGENES_PROPIEDADES);
